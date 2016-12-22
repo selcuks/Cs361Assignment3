@@ -1,6 +1,15 @@
 from django.shortcuts import render
 
 # Create your views here.
+from django.core.exceptions import PermissionDenied
+from django.shortcuts import render
+from django.template import RequestContext
+
+# Create your views here.
+
+
+from tags.models import Tag
+from .models import Todo
 from django.http import Http404
 from django.http import HttpResponse
 from django.shortcuts import render
@@ -10,12 +19,24 @@ from .models import my_item
 
 
 def show_blogx(request):
-    return render(request,"blogx.html",{"entry": my_item})
+    if request.method == "POST":
+        todo = Todo.objects.create(name=request.POST.get("todo_name"),
+                            description=request.POST.get("description_name"),
+                            owner=request.user)
+
+        todo.tags.add(*request.POST.getlist("tag_names"))
+
+
+    return render(request, "my_todos.html", {"todos": Todo.objects.filter(owner=request.user.id),
+                                             "tags":Tag.objects.all()})
 
 
 def get_blogx(request, todo_id):
     try:
-        return HttpResponse(my_item[int(todo_id)])
-    except IndexError:
+        todo = Todo.objects.get(id=todo_id)
+        if request.user.id != todo.owner.id:
+            raise PermissionDenied
+        return render(request, "detailed_todo.html", {"todo": todo},RequestContext(request,{}))
+    except Todo.DoesNotExist:
         raise Http404("We don't have any.")
 

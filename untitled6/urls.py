@@ -23,6 +23,9 @@ urlpatterns = [
     url('^blogx/', include("blogx.urls")),
     url('^users/', include("users.urls")),
     url('', include("users.urls")),
+    url('^tags/',include("tags.urls")),
+    #url('',include("tags.urls")),
+
 
 
 

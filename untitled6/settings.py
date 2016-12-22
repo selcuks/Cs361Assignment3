@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'users','blogx','todo',
+    'users','blogx','todo','tags',
 
 ]
 
@@ -57,6 +57,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [os.path.join(BASE_DIR, 'templates'), os.path.join(BASE_DIR, 'blogx/templates')]
+
         ,
         'APP_DIRS': True,
         'OPTIONS': {
@@ -122,6 +123,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-LOGIN_REDIRECT_URL='/blogx'
+#LOGIN_REDIRECT_URL='/blogx'
+LOGIN_REDIRECT_URL='/tags'
+
 
 
