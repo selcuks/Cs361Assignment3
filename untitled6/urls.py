@@ -19,23 +19,10 @@ from django.conf.urls import url, include
 
 
 urlpatterns = [
-    url('^todo/', include("todo.urls")),
-    url('^blogx/', include("blogx.urls")),
+    url('^todos/', include("todo.urls")),
+    url('^blog/entries/', include("blogx.urls")),
     url('^users/', include("users.urls")),
-    url('', include("users.urls")),
-    url('^tags/',include("tags.urls")),
-    #url('',include("tags.urls")),
+    url('^tags', include("tags.urls")),
 
+    ]
 
-
-
-
-
-
-
-
-
-
-
-
-]

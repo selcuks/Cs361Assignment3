@@ -37,7 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'users','blogx','todo','tags',
+    'users',
+    'blogx',
+    'todo',
+    'tags',
 
 ]
 
@@ -123,8 +126,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-#LOGIN_REDIRECT_URL='/blogx'
-LOGIN_REDIRECT_URL='/tags'
+LOGIN_REDIRECT_URL='/blog/entries'
 
 
 

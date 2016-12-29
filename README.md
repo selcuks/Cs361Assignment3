@@ -1,1 +1,1 @@
-https://github.com/selcuks/Cs361.Assignment.2
+https://github.com/selcuks
