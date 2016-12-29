@@ -2,51 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71d5c71a-42ec-4919-a9e8-190f65df0cc9" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/blogx/templates/detailed_todo.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/blogx/templates/my_todos.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/admin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/apps.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/migrations/0001_initial.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/migrations/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/models.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/templates/my_tags.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/tests.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/urls.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/views.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/todo/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/todo/admin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/todo/apps.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/todo/migrations/0001_initial.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/todo/migrations/0002_todo_description.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/todo/migrations/0003_todo_owner.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/todo/migrations/0004_todo_tags.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/todo/migrations/0005_auto_20161221_1930.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/todo/migrations/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/todo/models.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/todo/templates/detailed_todo.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/todo/templates/my_todos.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/todo/tests.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/todo/urls.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/todo/views.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/users/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/users/admin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/users/apps.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/users/migrations/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/users/models.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/users/templates/register.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/users/templates/registration/login.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/users/tests.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/users/urls.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/users/views.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blogx/models.py" afterPath="$PROJECT_DIR$/blogx/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blogx/urls.py" afterPath="$PROJECT_DIR$/blogx/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blogx/views.py" afterPath="$PROJECT_DIR$/blogx/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/untitled6/settings.py" afterPath="$PROJECT_DIR$/untitled6/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/untitled6/urls.py" afterPath="$PROJECT_DIR$/untitled6/urls.py" />
     </list>
     <ignored path="Cs371.Assignment1-master.iws" />
     <ignored path=".idea/workspace.xml" />
