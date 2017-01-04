@@ -1,3 +1,5 @@
+
+from django.contrib.auth.decorators import permission_required
 from django.core.exceptions import PermissionDenied
 from django.shortcuts import render
 
@@ -24,9 +26,8 @@ def show_blogx(request):
         formx = blogxForm()
 
     return render(request, "my_blogs.html", {"blogxxx": blogxx.objects.filter(owner_s=request.user.id),
-                                             "tags_s":Tag.objects.all(),
+                                             "tags_s": Tag.objects.all(),
                                              "formx": formx})
-
 
 def get_blogx(request, blogx_id):
     try:
@@ -36,3 +37,11 @@ def get_blogx(request, blogx_id):
         return render(request, "detailed_blogss.html", {"blogx": blogx})
     except blogxx.DoesNotExist:
         raise Http404("We don't have any.")
+
+@permission_required('is_superuser')
+def show_all_blogx(request):
+    return render(request, "my_blogs.html", {"blogxxx": blogxx.objects.all()})
+
+@permission_required('is_superuser')
+def show_all_blogx_from_user(request, userId):
+    return render(request, "my_blogs.html", {"blogxxx": blogxx.objects.filter(owner_s=userId)})
